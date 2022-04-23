@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.student.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>attendanceinsert</servlet-name>
+		<servlet-class>com.student.servlet.InsertAttendance</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>attendanceinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateAttendance</servlet-name>
+		<servlet-class>com.student.servlet.UpdateAttendanceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAttendance</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteAttendance</servlet-name>
+		<servlet-class>com.student.servlet.DeleteAttendanceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAttendance</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
